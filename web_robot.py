@@ -3,6 +3,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 import time
 
+
+
 class Web_Robot(webdriver.Firefox):
     def send_key(self, id_name, value, type='name'):
         if type=='id':
@@ -13,3 +15,4 @@ class Web_Robot(webdriver.Firefox):
     def click_button(self, class_name='' ):
         bt = self.find_element_by_class_name(class_name)
         bt.click()
+    
